@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #065F46">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#"><img src="./assets/images/Meldon logo.png" style="border-radius: 30px; width: 240px;" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto ms-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active text-white" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-white" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-white" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-white" href="./contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="text-decoration-none mx-2  text-white">MeldonEnergy@gmail.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-decoration-none mx-2  text-white" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2 text-white" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2 text-white" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2 text-white" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none mx-2 text-white" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-section py-5" style="background-color: #f2dfb5" data-aos="zoom-in-up">
+        <div class="container text-center">
+            <h2 class="mb-3">CONTACT US</h2>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-muted">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section py-5" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="info-wrap" data-aos="fade-up" data-aos-delay="100">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-map-marker-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>27 Sanusi Fafunwa street, Victoria Island, Lagos</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-phone-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Call</h3>
+                                <p>+2348033340695, +2348033110876</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>MeldonEnergy@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5" data-aos="fade-up" data-aos-delay="500">
+                        <h1 class="text-center mb-4">Our Location</h1>
+                        <div class="map-container">
+                            <div id="map"></div>
+                            <div id="map-error" class="error-message d-none"></div>
+                            <div class="location-info">
+                                <h5><i class="fas fa-map-marker-alt text-danger"></i> Our Address</h5>
+                                <p class="mb-1">27 Sanusi Fafunwa Street</p>
+                                <p class="mb-1">Victoria Island</p>
+                                <p>Lagos, Nigeria</p>
+                                <button id="getDirections" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <label for="name-field" class="pb-2">Your Name</label>
+                                <input type="text" name="name" id="name-field" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email-field" class="pb-2">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email-field" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="subject-field" class="pb-2">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject-field" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="message-field" class="pb-2">Message</label>
+                                <textarea class="form-control" name="message" rows="10" id="message-field"
+                                    required></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer id="footer" style="background-color: Brown; padding-top: 3rem; color: white;" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 footer-column mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <a href="./index.html" class="text-decoration-none text-muted">
+                            <li class="mb-2" style="color: #D4D8DE;">Home</li>
+                        </a>
+                        <a href="./about-us.html" class="text-decoration-none text-muted">
+                            <li class="mb-2" style="color: #D4D8DE;">About Us</li>
+                        </a>
+                        <a href="./services.html" class="text-decoration-none text-muted">
+                            <li class="mb-2" style="color: #D4D8DE;">Services</li>
+                        </a>
+                        <a href="./contact.html" class="text-decoration-none text-muted">
+                            <li class="mb-2" style="color: #D4D8DE;">Contact Us</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-9 footer-column address ps-lg-5">
+                    <h5>Meldon Energy
+                        Solutions Limited</h5>
+                    <div class="mb-3 d-flex align-items-start">
+                        <img src="./assets/images/Vector (2).svg" alt="Location" class="me-2 mt-1">
+                        <p style="color: #FFFFFF73; margin: 0;">27 Sanusi Fafunwa street, Victoria Island, Lagos</p>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <img src="./assets/images/phone-svgrepo-com 1.png" alt="Phone" class="me-2">
+                        <p style="color: #FFFFFF73;">08033340695, 08033110876</p>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <img src="./assets/images/mail-svgrepo-com 1.png" alt="Email" class="me-2">
+                        <p style="color: #FFFFFF73;">MeldonEnergy@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+            <div class="d-flex flex-column flex-lg-row"
+                style="border-top: 1px #FFFFFF73 solid; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding-top: 1rem;">
+                <p style="color: #FFFFFF73; margin: 0; margin-bottom: 1rem; ">2023 McGeorge
+                    Consulting, All Rights Reserved</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href=""><img src="./assets/images/facebook-svgrepo-com 1.png" alt="Facebook"></a>
+                    <a href=""><img src="./assets/images/XMLID_826_.png" alt="Twitter"></a>
+                    <a href=""><img src="./assets/images/Vector.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        function initMap() {
+            const location = { lat: 6.4281, lng: 3.4219 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: location,
+                mapId: "DEMO_MAP_ID"
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Meldon Energy Solutions"
+            });
+
+            document.getElementById("getDirections").addEventListener("click", function () {
+                const url = `https://www.google.com/maps/dir/?api=1&destination=27+Sanusi+Fafunwa+Street,Victoria+Island,Lagos`;
+                window.open(url, "_blank");
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places">
+        </script>
+</body>
+
+</html>
